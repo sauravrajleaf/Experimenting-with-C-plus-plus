@@ -8,6 +8,7 @@ using namespace std;
 class Base
 {
 public:
+    //Overridden Function
     virtual void show() = 0;
 };
 class Derived : public Base

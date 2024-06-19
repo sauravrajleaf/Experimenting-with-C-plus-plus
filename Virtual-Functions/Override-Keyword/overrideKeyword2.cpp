@@ -3,22 +3,21 @@ using namespace std;
 
 class Animal {
 public:
-    //Overridden Function
-    void eat() { // Virtual function
+    virtual void eat() { // Virtual function
         cout << "Animal is eating" << endl;
     }
 };
 
 class Dog : public Animal {
 public:
-    void eat() { // Override the virtual function
+    void eat() override { // Override the virtual function
         cout << "Dog is eating bread" << endl;
     }
 };
 
 class Cat : public Animal {
 public:
-    void eat() { // Override the virtual function
+    void eat() override { // Override the virtual function
         cout << "Cat is eating fish" << endl;
     }
 };
@@ -33,16 +32,14 @@ int main() {
     Animal* ptr;
 
     ptr = &dog;
-    feedAnimal(ptr); // This should call Dog's eat() function but that do not happens because we are not using the virtual keyword
+    feedAnimal(ptr); // This will call Dog's eat() function
 
     ptr = &cat;
-    feedAnimal(ptr); // This should call Cat's eat() function but that do not happens because we are not using the virtual keyword
+    feedAnimal(ptr); // This will call Cat's eat() function
 
     return 0;
 }
 
-// Its correct implementation is in the folder override - keyword
-
 // OUTPUT - 
-// Animal is eating
-// Animal is eating
+// Dog is eating bread
+// Cat is eating fish
