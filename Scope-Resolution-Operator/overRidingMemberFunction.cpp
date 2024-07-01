@@ -15,7 +15,13 @@ public:
 
 };
 
-// Declare base class 
+
+// Dervied Class - Inheritance
+// The : symbol in the context of class Child : public ABC denotes inheritance in C++. 
+// This means that the class child is inheriting from the class ABC.
+// The public keyword specifies the type of inheritance. 
+// Public inheritance means that the public and protected members of the base class ABC retain their access levels in the derived class child. 
+// Private members of the base class are not accessible directly by the derived class.
 class Child : public ABC {
 public:
     //Concept of Function overriding - same function name as the base class

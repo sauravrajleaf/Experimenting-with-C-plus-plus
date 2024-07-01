@@ -15,10 +15,10 @@ public:
 };
 
 // Dervied Class - Inheritance
-// The : symbol in the context of class child : public ABC denotes inheritance in C++. 
-// This means that the class child is inheriting from the class ABC.
+// The : symbol in the context of class Dog : public Animal denotes inheritance in C++. 
+// This means that the class child is inheriting from the class Animal.
 // The public keyword specifies the type of inheritance. 
-// Public inheritance means that the public and protected members of the base class ABC retain their access levels in the derived class child. 
+// Public inheritance means that the public and protected members of the base class Animal retain their access levels in the derived class child. 
 // Private members of the base class are not accessible directly by the derived class.
 class Dog : public Animal
 {
