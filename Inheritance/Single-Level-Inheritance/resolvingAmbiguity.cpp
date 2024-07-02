@@ -33,3 +33,7 @@ int main()
 
     return 0;
 }
+
+// OUTPUT - 
+// Class B
+// Class A

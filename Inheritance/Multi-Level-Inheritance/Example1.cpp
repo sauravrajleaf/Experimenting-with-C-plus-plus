@@ -1,6 +1,8 @@
 // Example of Multi-Level Inheritance in which class BabyDog is created inhereting method from 
 // Two different class i.e, Animal & Dog
 
+// Multilevel inheritance is a feature of C++ where a class is derived from another derived class, forming a chain of inheritance. 
+
 #include <iostream>  
 
 using namespace std;
@@ -13,7 +15,7 @@ public:
     }
 };
 
-// Derived class
+// Derived class -> First it is inherited from class Animal
 class Dog : public Animal
 {
 public:
@@ -22,7 +24,7 @@ public:
     }
 };
 
-// Sub-Derived class
+// Sub-Derived class -> It is being derived from a already derived class Dog(Base class Animal)
 class BabyDog : public Dog
 {
 public:
